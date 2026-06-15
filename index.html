@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanami Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+  <canvas id="particles"></canvas>
+
+  <nav class="nav-pill">
+    <div class="nav-inner">
+      <ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#posters">Designs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero"  id="home">
+    <div class="hero-center">
+      <div class="mini-id">
+        <img src="assets/hanami-id.jpg" alt="profile">
+      </div>
+      <h1>HANNAH MAE INTING</h1>
+      <h2 id="typed-text" class="typing">I design & develop</h2>
+
+      <div class="hero-actions">
+        <a href="#projects" class="cta-primary">View My Work</a>
+      <a href="#footer" class="cta-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="parallax-section">
+    <div class="parallax-content">
+      <h2 class="section-title">FEATURED PROJECTS</h2>
+      <div class="systems-grid">
+<div class="sys-card" onclick="openProjectModal('MINDAYO', 'This is Mindayo, a booking system for Mindanao tourist spots. I coined the term Mindayo, combining Min for Mindanao and dayo for going to another place. This system helps users easily discover and book popular destinations across Mindanao.', ['assets/mindayo1 (1).png', 'assets/mindayo1 (2).png', 'assets/mindayo1 (3).png'])">
+  <h3>MINDAYO</h3>
+  <div class="placeholder-img"><img src="assets/mindayo1 (1).png" alt="MINDAYO"></div>
+</div>
+        
+<div class="sys-card" onclick="openProjectModal('TRUEHUE', 'TrueHue is an inclusive e-commerce platform dedicated to skincare and beauty products, developed as a comprehensive solution for diverse beauty needs. The website serves as a digital storefront designed to provide an accessible and streamlined shopping experience for high-quality skincare and makeup essentials.', [
+    'assets/truhue (1).png', 
+    'assets/truhue (7).png', 
+    'assets/truhue (9).png', 
+    'assets/truhue (17).png'
+])">
+    <h3>TRUEHUE</h3>
+    <div class="placeholder-img"><img src="assets/truhue (1).png" alt="TRUEHUE"></div>
+</div>
+        
+<div class="sys-card" onclick="openProjectModal('CINEEASE', 'CineEase is a streamlined cinema booking platform designed to simplify the movie-going experience. The system offers users an intuitive interface to browse current film listings, view theater schedules, and manage seat reservations efficiently, providing a seamless transition from selection to booking.', [
+  'assets/ce1.jfif', 
+  'assets/ce2.jfif', 
+  'assets/ce3.jfif', 
+  'assets/ce4.jfif', 
+])">
+  <h3>CINEEASE</h3>
+  <div class="placeholder-img"><img src="assets/ce1.jfif" alt="CINEEASE"></div>
+</div>
+
+<div class="sys-card" onclick="openProjectModal('KABAYANSYNC', 'KabayaSync is a micro-gig and errand-servicing platform designed to bridge the gap between service providers and users. With a core focus on safety and user verification, the system incorporates advanced security features to provide a secure environment for connecting with local helpers, ensuring peace of mind for users seeking trusted assistance for daily tasks.', [
+  'assets/kbs1.jfif', 
+  'assets/KBS2.png', 
+  'assets/KBS3.jfif'
+])">
+  <h3>KABAYANSYNC</h3>
+  <div class="placeholder-img"><img src="assets/kbs1.jfif" alt="KABAYANSYNC"></div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="posters" class="parallax-section">
+    <div class="parallax-content">
+      <h2>DIGITAL POSTERS</h2>
+      <div class="poster-grid">
+        <a href="#" class="poster-card"><img src="assets/poster1.jpg" alt="Poster 1"></a>
+        <a href="#" class="poster-card"><img src="assets/poster2.png" alt="Poster 2"></a>
+        <a href="#" class="poster-card"><img src="assets/poster3.png" alt="Poster 3"></a>
+</a>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="logo-banner" >
+  <h2 class="banner-label" id="logo-banner">LOGO DESIGNS</h2>
+  <div class="banner-track" >
+    <div class="banner-item"><img src="assets/LOGO1.png" alt="Logo 1"></div>
+    <div class="banner-item"><img src="assets/LOGO2.png" alt="Logo 2"></div>
+    <div class="banner-item"><img src="assets/LOGO3.png" alt="Logo 3"></div>
+    <div class="banner-item"><img src="assets/LOGO4.png" alt="Logo 4"></div>
+    <div class="banner-item"><img src="assets/LOGO5.png" alt="Logo 5"></div>
+    <div class="banner-item"><img src="assets/LOGO1.png" alt="Logo 1"></div>
+    <div class="banner-item"><img src="assets/LOGO2.png" alt="Logo 2"></div>
+    <div class="banner-item"><img src="assets/LOGO3.png" alt="Logo 3"></div>
+    <div class="banner-item"><img src="assets/LOGO4.png" alt="Logo 4"></div>
+    <div class="banner-item"><img src="assets/LOGO5.png" alt="Logo 5"></div>
+  </div>
+</section>
+
+
+  <section id="logos" class="liniment-section">
+    <div class="brand-title">
+      <h2>Liniment Gel Labels</h2>
+      <p>Created in Figma</p>
+    </div>
+    <div class="carousel-container">
+      <button class="arrow prev" onclick="scrollCarousel(-1)">&#10094;</button>
+      <div class="carousel" id="carousel">
+        <img src="DON-ESSENTIALS-LABELS/LEMON.png" alt="Lemon">
+        <img src="DON-ESSENTIALS-LABELS/EUCALYPTUS.png" alt="eucalyptus">
+        <img src="DON-ESSENTIALS-LABELS/LAVENDER.png" alt="Lavender">
+        <img src="DON-ESSENTIALS-LABELS/4-IN-1.png" alt="4 in 1">
+        <img src="DON-ESSENTIALS-LABELS/CITRONELLA.png" alt="Citronella">
+        <img src="DON-ESSENTIALS-LABELS/ORANGE.png" alt="Orange">
+        <img src="DON-ESSENTIALS-LABELS/PEPPERMINT.png" alt="Peppermint">
+        <img src="DON-ESSENTIALS-LABELS/POMELO.png" alt="Pomelo">
+      </div>
+
+
+      <button class="arrow next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+
+<footer class="site-footer" id="footer">
+    <div class="footer-content">
+
+        <h3>HANNAH MAE INTING</h3>
+
+        <p class="footer-tagline">
+            IT Student • UI/UX Designer • Frontend Developer
+        </p>
+
+        <div class="footer-links">
+            <a href="https://facebook.com/nana.nameng" target="https://facebook.com/nana.nameng">
+                Facebook
+            </a>
+
+            <a href="inting.hannahmae@dnsc.edu.ph">
+                Email Me
+            </a>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <p class="footer-copy">
+            © 2026 Hannah Mae Inting. Crafted with HTML, CSS & JavaScript.
+        </p>
+
+    </div>
+</footer>
+
+</body>
+</html>
